@@ -1,0 +1,7 @@
+# Uncomment this if we ever add a to-do list, which we should avoid like the plague.
+# inherit_from: .rubocop_todo.yml
+
+AllCops:
+  Exclude: # Files never to check against any rules
+    - db/**/*
+    - test/**/*
