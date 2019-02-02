@@ -3,5 +3,14 @@
 
 AllCops:
   Exclude: # Files never to check against any rules
+    - bin/**/*
     - db/**/*
     - test/**/*
+    - node_modules/**/*
+
+Metrics/LineLength:
+  Max: 130 # We no longer code on "ancient" terminals with 80 character limits.
+  IgnoreCopDirectives: true
+
+Style/StringLiterals:
+  Enabled: false # don't be weird about single quotes vs double quotes, it's not worth the "optimization"
